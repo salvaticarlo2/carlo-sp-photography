@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]  // <-- CHANGE THIS LINE
+      "@/*": ["./app/*"]
     },
     "target": "es2022",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -20,6 +20,6 @@
     "incremental": true,
     "types": ["node"]
   },
-  "include": ["."], // <-- CHANGE THIS LINE
+  "include": ["app"],
   "exclude": ["node_modules"]
 }
