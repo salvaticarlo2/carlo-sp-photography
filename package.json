@@ -16,5 +16,10 @@
     "url": "https://github.com/salvaticarlo2/carlo-sp-photography/issues"
   },
   "homepage": "https://github.com/salvaticarlo2/carlo-sp-photography#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "next": "^15.2.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
 }
