@@ -1,15 +1,6 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/blog/[slug]/page": "app/blog/[slug]/page.js",
   "/contact/page": "app/contact/page.js",
-  "/galleries/[slug]/page": "app/galleries/[slug]/page.js",
-  "/blog/page": "app/blog/page.js",
-  "/films/page": "app/films/page.js",
   "/galleries/page": "app/galleries/page.js",
-  "/prints/page": "app/prints/page.js",
-  "/page": "app/page.js",
-  "/testimonials/page": "app/testimonials/page.js",
-  "/prints/[slug]/page": "app/prints/[slug]/page.js",
-  "/workshops/[slug]/page": "app/workshops/[slug]/page.js",
-  "/workshops/page": "app/workshops/page.js"
+  "/page": "app/page.js"
 }

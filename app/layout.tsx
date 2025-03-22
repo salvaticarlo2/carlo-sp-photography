@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
-
-// Define metadata for SEO
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Carlo SP Landscape Photography | Professional Landscape Photographer',
-  description: 'Carlo SP is a professional landscape photographer specializing in capturing the beauty of natural landscapes. Explore galleries, workshops, prints, and more.',
-  keywords: 'landscape photography, Carlo SP, photography workshops, landscape prints, nature photography',
+  description:
+    'Carlo SP is a professional landscape photographer specializing in capturing the beauty of natural landscapes. Explore galleries, workshops, prints, and more.',
+  keywords:
+    'landscape photography, Carlo SP, photography workshops, landscape prints, nature photography',
   openGraph: {
     title: 'Carlo SP Landscape Photography',
     description: 'Professional landscape photography, workshops, and fine art prints',
@@ -24,7 +23,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Carlo SP Landscape Photography',
-    description: 'Professional landscape photography, workshops, and fine art prints',
+    description:
+      'Professional landscape photography, workshops, and fine art prints',
     images: ['/images/twitter-image.jpg'],
   },
   robots: {
@@ -41,13 +41,17 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body className="bg-charcoal text-off-white font-raleway">
+        {/* Header with a small logo */}
+        <header className="p-4">
+          <img src="/images/logo.png" alt="Carlo SP Logo" className="h-10" />
+        </header>
         {children}
       </body>
     </html>
-  )
+  );
 }

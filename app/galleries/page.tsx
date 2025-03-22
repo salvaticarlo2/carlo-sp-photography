@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
+import Navbar from '../components/layout/Navbar.tsx';
+import Footer from '../components/layout/Footer.tsx';
 
 // Placeholder gallery categories
 const galleryCategories = [
