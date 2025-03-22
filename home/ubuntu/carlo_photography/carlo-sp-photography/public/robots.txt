@@ -1,0 +1,4 @@
+{
+  "name": "robots.txt",
+  "content": "User-agent: *\nAllow: /\n\nSitemap: https://carlosp.photography/sitemap.xml"
+}

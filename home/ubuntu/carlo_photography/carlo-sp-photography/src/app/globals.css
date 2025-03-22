@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Color scheme based on design */
+  --color-dark-slate: #2A2A2A;
+  --color-off-white: #F5F5F5;
+  --color-earth-tone: #A67C52;
+  --color-sage-green: #7D9D8C;
+  --color-soft-blue: #8CA3B7;
+  --color-pure-white: #FFFFFF;
+  --color-light-gray: #E0E0E0;
+  --color-medium-gray: #888888;
+  --color-charcoal: #1A1A1A;
+  --color-success-green: #4CAF50;
+  --color-alert-red: #F44336;
+  --color-warning-amber: #FFC107;
+}
+
+@layer base {
+  body {
+    @apply bg-dark-slate text-off-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  p {
+    @apply font-raleway text-base leading-relaxed;
+  }
+
+  .accent-text {
+    @apply font-montserrat;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-earth-tone text-off-white px-6 py-3 font-raleway font-semibold uppercase tracking-wider transition-all hover:bg-opacity-90;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border border-off-white text-off-white px-6 py-3 font-raleway font-semibold uppercase tracking-wider transition-all hover:bg-off-white hover:text-dark-slate;
+  }
+
+  .nav-link {
+    @apply font-raleway font-medium uppercase tracking-wider text-off-white hover:text-earth-tone transition-colors;
+  }
+
+  .section-title {
+    @apply font-playfair text-4xl md:text-5xl mb-8 text-center;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Hero section styles */
+.hero-section {
+  @apply relative h-screen w-full overflow-hidden;
+}
+
+.hero-image {
+  @apply absolute inset-0 w-full h-full object-cover;
+}
+
+.hero-overlay {
+  @apply absolute inset-0 bg-charcoal bg-opacity-40 flex flex-col items-center justify-center text-center px-4;
+}
+
+.hero-title {
+  @apply font-playfair font-bold text-4xl md:text-6xl lg:text-7xl text-pure-white mb-4;
+}
+
+.hero-subtitle {
+  @apply font-raleway font-light text-xl md:text-2xl text-pure-white mb-8 max-w-3xl;
+}
+
+/* Gallery grid styles */
+.gallery-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
+}
+
+.gallery-item {
+  @apply relative overflow-hidden group;
+}
+
+.gallery-image {
+  @apply w-full h-full object-cover transition-transform duration-500 group-hover:scale-105;
+}
+
+.gallery-overlay {
+  @apply absolute inset-0 bg-charcoal bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100;
+}
+
+.gallery-title {
+  @apply font-playfair text-2xl text-pure-white;
+}
+
+/* Testimonial styles */
+.testimonial-card {
+  @apply bg-charcoal p-6 rounded-lg;
+}
+
+.testimonial-text {
+  @apply italic text-off-white mb-4;
+}
+
+.testimonial-author {
+  @apply font-montserrat font-semibold text-earth-tone;
+}
+
+/* Footer styles */
+.footer {
+  @apply bg-charcoal py-12;
+}
+
+.footer-logo {
+  @apply mb-6;
+}
+
+.footer-nav {
+  @apply flex flex-wrap gap-6 mb-8;
+}
+
+.footer-link {
+  @apply text-light-gray hover:text-earth-tone transition-colors;
+}
+
+.social-icons {
+  @apply flex gap-4 mb-8;
+}
+
+.social-icon {
+  @apply text-light-gray hover:text-earth-tone transition-colors;
+}
+
+.copyright {
+  @apply text-medium-gray text-sm;
+}
